@@ -1,6 +1,6 @@
 resource "aws_instance" "test" {
-  ami           = "ami-00ca32bbc84273381"
-  instance_type = "t3.micro"
+  ami           = "var.iam"
+  instance_type = "var.instance_type"
   key_name      = "new-key"
 
   tags = {
